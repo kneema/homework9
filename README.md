@@ -1,4 +1,6 @@
 <h1> Readme Generator</h1>
+<p>We were tasked with creating a command-line application that dynamically generates a README.md from a user's input. The application will be invoked with the following command:
+node app.js
 
 <p> Welcome! When using Github, a readme tells outside people about your project and is important for identification for the app and detailed information and reasoning for specific app programs and coding. 
 
@@ -10,6 +12,7 @@
 <li>Install
 <li>Usage
 <li>License
+</li>
 
 <h1>Author</h1>
 @kneema

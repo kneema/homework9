@@ -4,7 +4,7 @@ const util = require("util");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// user questions for readme 
+// Inputs for the user's readme 
  async function Readmeinput () {
   return inquirer.prompt([
     {
@@ -18,7 +18,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
         name: "Description"
     },
     {
-        message: "Link a screenshot",
+        message: "Link a screenshot of your project",
         type: "input",
         name: "Screenshot"
     },
@@ -109,7 +109,7 @@ ${readmeEntered.Questions}
 ${readmeEntered.username}
 ${readmeEntered.email}`
 
-const FollowGitHub = `https://img.shields.io/github/followers/${username}}?label=Follow%20Me%20On%20GitHub&style=social`;
+const goGitHub = `https://img.shields.io/github/followers/${username}}?label=Follow%20Me%20On%20GitHub&style=social`;
 
 const result = await writeFileAsync('README.md',
 readmeUserString,
